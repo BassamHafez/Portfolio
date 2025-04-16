@@ -3,6 +3,7 @@ import MainError from "./Pages/Error/MainError";
 import Root from "./Pages/Root";
 import NotFound from "./Pages/Error/NotFound";
 import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,6 +16,7 @@ function App() {
           index: true,
           element: <Home />,
         },
+        { path: "about", element: <About /> },
         { path: "*", element: <NotFound /> },
       ],
     },

@@ -4,9 +4,8 @@
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
 }
-
-@theme{
-  --breakpoint-xs:390px;
+@theme {
+  --breakpoint-xs: 390px;
 }
 
 body {
