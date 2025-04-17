@@ -12,3 +12,10 @@ body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
+
+
+@media screen and (max-width:768px) {
+  body,html{
+    font-size: 14px;
+  }
+}

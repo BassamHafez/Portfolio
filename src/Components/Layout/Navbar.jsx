@@ -5,7 +5,7 @@ const Navbar = () => {
   const generalLinks = [
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
-    { to: "/gallery", label: "Gallery" },
+    { to: "/projects", label: "Projects" },
     { to: "/contact", label: "Contact" },
   ];
 
