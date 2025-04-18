@@ -3,6 +3,7 @@ import profilePic from "../../assets/me.webp";
 import Timeline from "../UI/Blocks/Timeline";
 import MainBtn from "../UI/Buttons/MainBtn";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -33,14 +34,21 @@ const Hero = () => {
 
           <div className="flex gap-x-5 items-center">
             <MainBtn text="Download CV" />
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="dark:text-white text-3xl hover:scale-110 duration-300 cursor-pointer"
-            />
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="dark:text-white text-3xl hover:scale-110 duration-300 cursor-pointer"
-            />
+            <Link to="https://github.com/BassamHafez" target="_blank">
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="dark:text-white text-3xl hover:scale-110 duration-300 cursor-pointer"
+              />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/in/bassam-hafez/"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="dark:text-white text-3xl hover:scale-110 duration-300 cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
       </div>

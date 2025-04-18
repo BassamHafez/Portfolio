@@ -1,6 +1,7 @@
 import { projects } from "../../logic/sharedData";
 import ProjectItem from "./ProjectItem";
 
+const featuredProjects = projects.filter((p) => p.type.includes("featured"));
 const freelanceProjects = projects.filter((p) => p.type.includes("freelance"));
 const fullstackProjects = projects.filter((p) => p.type.includes("fullstack"));
 const reactProjects = projects.filter((p) => p.type.includes("react"));
@@ -13,6 +14,16 @@ const Projects = () => {
       <div className="tabs tabs-box">
         <label className="tab">
           <input type="radio" name="my_projects" defaultChecked />
+          Featured
+        </label>
+        <div className="tab-content bg-base-100 p-2 md:p-6">
+          {featuredProjects.map((project) => (
+            <ProjectItem key={project._id} project={project} />
+          ))}
+        </div>
+
+        <label className="tab">
+          <input type="radio" name="my_projects" />
           Freelance
         </label>
         <div className="tab-content bg-base-100 p-2 md:p-6">
