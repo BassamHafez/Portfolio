@@ -23,7 +23,7 @@ const Projects = () => {
         </div>
 
         <label className="tab">
-          <input type="radio" name="my_projects" defaultChecked />
+          <input type="radio" name="my_projects" />
           Featured
         </label>
         <div className="tab-content bg-base-100 p-2 md:p-6">
