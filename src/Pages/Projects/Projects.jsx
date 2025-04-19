@@ -14,6 +14,16 @@ const Projects = () => {
       <div className="tabs tabs-box">
         <label className="tab">
           <input type="radio" name="my_projects" defaultChecked />
+          ALL
+        </label>
+        <div className="tab-content bg-base-100 p-2 md:p-6">
+          {projects.map((project) => (
+            <ProjectItem key={project._id} project={project} />
+          ))}
+        </div>
+
+        <label className="tab">
+          <input type="radio" name="my_projects" defaultChecked />
           Featured
         </label>
         <div className="tab-content bg-base-100 p-2 md:p-6">
