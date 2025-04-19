@@ -332,7 +332,7 @@ export const projects = [
     ],
   },
   {
-    _id: "proj_10",
+    _id: "proj_11",
     type: ["js"],
     name: "Mathematics-Queuing-Theory",
     imgUrl: queuingTheory,
@@ -351,7 +351,7 @@ export const projects = [
     ],
   },
   {
-    _id: "proj_11",
+    _id: "proj_12",
     type: ["js"],
     name: "Aqua",
     imgUrl: aqua,
@@ -370,7 +370,7 @@ export const projects = [
     note: "The project's UI was inspired by a ready template.",
   },
   {
-    _id: "proj_12",
+    _id: "proj_13",
     type: ["js"],
     name: "Beso Restaurant",
     imgUrl: restaurant,
@@ -387,7 +387,7 @@ export const projects = [
     ],
   },
   {
-    _id: "proj_13",
+    _id: "proj_14",
     type: ["freelance", "js"],
     name: "VG (Ransomware Detection Website)",
     imgUrl: VG,
@@ -407,7 +407,7 @@ export const projects = [
     note: "The project's UI was implemented based on a ready-made Figma design",
   },
   {
-    _id: "proj_14",
+    _id: "proj_15",
     type: ["freelance", "js"],
     name: "Ministries-Complains (In Kuwait)",
     imgUrl: ministries,
@@ -426,7 +426,7 @@ export const projects = [
     ],
   },
   {
-    _id: "proj_15",
+    _id: "proj_16",
     type: ["freelance", "js"],
     name: "Courses_Following",
     imgUrl: t3lm,
@@ -446,7 +446,7 @@ export const projects = [
     ],
   },
   {
-    _id: "proj_16",
+    _id: "proj_17",
     type: ["js"],
     name: "Contact List App",
     imgUrl: contacts,
@@ -465,7 +465,7 @@ export const projects = [
     ],
   },
   {
-    _id: "proj_17",
+    _id: "proj_18",
     type: ["freelance", "js"],
     name: "Saudi-National-Day",
     imgUrl: saudi,
@@ -483,7 +483,7 @@ export const projects = [
     ],
   },
   {
-    _id: "proj_18",
+    _id: "proj_19",
     type: ["bootstrap"],
     name: "Beso R Us (Toys Store)",
     imgUrl: besorus,
@@ -500,7 +500,7 @@ export const projects = [
     ],
   },
   {
-    _id: "proj_19",
+    _id: "proj_20",
     type: ["bootstrap"],
     name: "Telecome Egypt (We)",
     imgUrl: we,
@@ -519,7 +519,7 @@ export const projects = [
     note: "This project is a frontend implementation of a well-known real-world company website.",
   },
   {
-    _id: "proj_20",
+    _id: "proj_21",
     type: ["bootstrap"],
     name: "KFC",
     imgUrl: KFC,
@@ -538,7 +538,7 @@ export const projects = [
     note: "This project is a frontend implementation of a well-known real-world company website.",
   },
   {
-    _id: "proj_21",
+    _id: "proj_22",
     type: ["js"],
     name: "Car Shop",
     imgUrl: car,
