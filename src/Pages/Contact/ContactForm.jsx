@@ -28,7 +28,11 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col w-full md:w-8/10">
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className="flex flex-col w-full md:w-8/10"
+    >
       <label className="floating-label mb-10">
         <input
           className="input input-md w-full"
