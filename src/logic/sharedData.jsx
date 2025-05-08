@@ -126,7 +126,7 @@ export const projects = [
     name: "Give A Gift",
     imgUrl: giveagift,
     github: "https://github.com/BassamHafez/Give-A-Gift",
-    videoUrl: "https://www.youtube.com/watch?v=NY_l888_TiU",
+    videoUrl: "https://youtu.be/NY_l888_TiU",
     live: "https://www.giveagift.com.sa/",
     tools: [
       "React Js",
@@ -159,7 +159,7 @@ export const projects = [
     name: "EasyJob - Job Finder Platform",
     imgUrl: easyjob,
     github: "https://github.com/BassamHafez/EasyJob",
-    videoUrl: "https://drive.google.com/file/d/1e7H9gUOpuT4K9SkFl4NLcB1CjXbOD1wN/view?usp=sharing",
+    videoUrl: "https://youtu.be/gPQ4nlcljMY",
     live: "https://drive.google.com/drive/folders/1JzutkPaGC2Q52bJS_8_SXGCrreKOrA2t?usp=drive_link", //live demo here
     tools: [
       "React Js",
@@ -192,7 +192,7 @@ export const projects = [
     name: "Zixes Movies (First React {Project})",
     imgUrl: zixes,
     github: "https://github.com/BassamHafez/Zixes-Movies",
-    videoUrl: "#",
+    videoUrl: "https://youtu.be/yesIZf-tXc0",
     live: "https://bassamhafez.github.io/Zixes-Movies/",
     tools: [
       "React Js",
@@ -220,7 +220,7 @@ export const projects = [
     name: "Ricky Pet Shop (For Kids)",
     imgUrl: ricky,
     github: "https://github.com/BassamHafez/Ricky-pet-shop",
-    videoUrl: "#",
+    videoUrl: "https://youtu.be/ao3xhXUBxXQ",
     live: "https://ricky-pet-shop.vercel.app/",
     tools: [
       "React Js",
