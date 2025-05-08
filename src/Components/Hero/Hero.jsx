@@ -14,6 +14,7 @@ const Hero = () => {
             <img
               src={profilePic}
               className="xs:w-xs md:max-w-sm translate-8 hover:translate-0 duration-500 rounded-2xl shadow-lg shadow-cyan-500"
+              alt="Bassam Hafez"
             />
           </div>
         </div>
@@ -40,7 +41,11 @@ const Hero = () => {
             >
               <MainBtn text="Download CV" />
             </a>
-            <Link to="https://github.com/BassamHafez" target="_blank">
+            <Link
+              to="https://github.com/BassamHafez"
+              target="_blank"
+              aria-label="Visit my GitHub profile"
+            >
               <FontAwesomeIcon
                 icon={faGithub}
                 className="dark:text-white text-3xl hover:scale-110 duration-300 cursor-pointer"
@@ -49,6 +54,7 @@ const Hero = () => {
             <Link
               to="https://www.linkedin.com/in/bassam-hafez/"
               target="_blank"
+              aria-label="Visit my LinkedIn profile"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}

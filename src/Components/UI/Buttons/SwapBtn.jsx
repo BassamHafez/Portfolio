@@ -31,7 +31,13 @@ const SwapBtn = () => {
 
   return (
     <label className="swap swap-rotate bg-cyan-500 rounded-full p-1">
-      <input type="checkbox" onChange={toggleMode}  checked={themeMode==="dark"?false:true}/>
+      <input
+        type="checkbox"
+        onChange={toggleMode}
+        checked={themeMode === "dark" ? false : true}
+        role="button"
+        aria-label="Toggle dark mode"
+      />
       <svg
         className="swap-on h-7 w-7 fill-current"
         xmlns="http://www.w3.org/2000/svg"
