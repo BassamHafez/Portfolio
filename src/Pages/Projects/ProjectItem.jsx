@@ -20,12 +20,12 @@ const ProjectItem = ({ project }) => {
         <h2 className="text-2xl font-bold mb-4 text-cyan-400">
           {project.name}
         </h2>
-        <p className="text-sm dark:text-gray-200">{project.desc}</p>
+        <p className="text-sm dark:text-gray-200 pl-3">{project.desc}</p>
         <h3 className="text-xl mt-5 mb-2 text-cyan-400 font-bold">Features</h3>
-        <ul className="list-disc list-outside">
+        <ul className="list-outside list-none features_list pl-3">
           {project.features.map((feature, index) => (
             <li
-              className="text-sm mb-2 dark:text-gray-200"
+              className="text-sm mb-2 dark:text-gray-200 relative pl-6"
               key={`${feature}_${index}`}
             >
               {feature}
