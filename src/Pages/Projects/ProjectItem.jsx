@@ -41,7 +41,6 @@ const ProjectItem = ({ project }) => {
         </ul>
         {project.note && (
           <div role="alert" className="alert mt-2">
-            {/* <FontAwesomeIcon className="text-red-600 fa-fade" icon={faThumbTack}/> */}
             <span className="loading loading-ring loading-lg text-red-600"></span>
             <span>{project.note}</span>
           </div>
@@ -97,7 +96,7 @@ const ProjectItem = ({ project }) => {
             <Link to={project.live} target="_blank">
               <FontAwesomeIcon
                 title="Live"
-                className="text-4xl cursor-pointer hover:scale-120 duration-200 hover:text-cyan-400"
+                className="text-4xl cursor-pointer hover:scale-120 duration-200 text-white hover:text-cyan-400"
                 icon={faArrowUpRightFromSquare}
               />
             </Link>

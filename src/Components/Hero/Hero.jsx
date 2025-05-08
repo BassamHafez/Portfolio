@@ -33,7 +33,13 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-x-5 items-center">
-            <MainBtn text="Download CV" />
+            <a
+              title="Download CV"
+              href="/Bassam_ReactJS.pdf"
+              download="Bassam_ReactJS.pdf"
+            >
+              <MainBtn text="Download CV" />
+            </a>
             <Link to="https://github.com/BassamHafez" target="_blank">
               <FontAwesomeIcon
                 icon={faGithub}

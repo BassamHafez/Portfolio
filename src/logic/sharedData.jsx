@@ -243,7 +243,8 @@ export const projects = [
     imgUrl: notes,
     github: "https://github.com/BassamHafez/Note_App",
     videoUrl: "#",
-    live: "#", //live demo here
+    live: "#",
+    
     tools: ["React Js", "React Bootstrap", "Css", "Html", "Node Js", "mySQL"],
     desc: "A collaborative notes management app built with React.js (frontend) and Node.js (backend). Designed to simplify note-taking with a smooth UI and full CRUD functionality.",
     features: [
