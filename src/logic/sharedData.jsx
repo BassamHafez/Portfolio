@@ -126,7 +126,7 @@ export const projects = [
     name: "Give A Gift",
     imgUrl: giveagift,
     github: "https://github.com/BassamHafez/Give-A-Gift",
-    videoUrl: "#",
+    videoUrl: "https://www.youtube.com/watch?v=NY_l888_TiU",
     live: "https://www.giveagift.com.sa/",
     tools: [
       "React Js",
