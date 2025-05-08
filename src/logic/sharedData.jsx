@@ -107,15 +107,17 @@ export const projects = [
     ],
     desc: "A modern platform designed to enhance the financial efficiency of real estate portfolios for owners and managers.",
     features: [
-      "Manage estates, compounds, contracts, revenues, expenses, and more.",
-      "Handle tenant profiles, rent collection, and maintenance requests.",
-      "Track portfolio performance with occupancy and financial indicators.",
-      "Send SMS and email alerts for efficient tenant communication.",
-      "Centralized management of tenant payments and property documents.",
-      "Store and categorize documents for both owners and tenants.",
-      "Flexible pricing plans with integrated electronic payments.",
-      "Multi-admin support with role-based permission control.",
-      "Powerful dashboard for owners, landlords, and brokers.",
+      "Available in both Arabic and English for a localized and user-friendly experience.",
+      "Choose from three types of plans: VIP, ready-made packages, or fully custom packages tailored to your needs.",
+      "Integrated with Telr for secure and efficient electronic payments.",
+      "Multi-admin support with role-based permission control, allowing owners to define each admin’s responsibilities.",
+      "Powerful dashboard designed for owners, landlords, and brokers to get a clear overview of operations.",
+      "Manage estates, compounds, contracts, revenues, expenses, and more from one place.",
+      "Handle tenant profiles, track rent collection, and respond to maintenance requests efficiently.",
+      "Centralized management of tenant payments and property-related documents.",
+      "Store and organize documents for both property owners and tenants.",
+      "Track portfolio performance using detailed occupancy rates and financial indicators.",
+      "Send SMS and email alerts to maintain smooth and timely communication with tenants.",
     ],
   },
   {
@@ -157,8 +159,8 @@ export const projects = [
     name: "EasyJob - Job Finder Platform",
     imgUrl: easyjob,
     github: "https://github.com/BassamHafez/EasyJob",
-    videoUrl: "#",
-    live: "#", //live demo here
+    videoUrl: "https://drive.google.com/file/d/1e7H9gUOpuT4K9SkFl4NLcB1CjXbOD1wN/view?usp=sharing",
+    live: "https://drive.google.com/drive/folders/1JzutkPaGC2Q52bJS_8_SXGCrreKOrA2t?usp=drive_link", //live demo here
     tools: [
       "React Js",
       "Redux Toolkit",
@@ -178,6 +180,10 @@ export const projects = [
       "Flexible profiles for both employers and job seekers.",
       "Integrated map to find jobs near your location.",
       "Notifications via WhatsApp and Gmail for new job opportunities.",
+      "Pricing plans for employers to post jobs.",
+      "Enteractive map for job location visualization.",
+      "Control Interviews and job applications.",
+      "Stages to filter candidates and manage interview cycle."
     ],
   },
   {
@@ -244,7 +250,7 @@ export const projects = [
     github: "https://github.com/BassamHafez/Note_App",
     videoUrl: "#",
     live: "#",
-    
+
     tools: ["React Js", "React Bootstrap", "Css", "Html", "Node Js", "mySQL"],
     desc: "A collaborative notes management app built with React.js (frontend) and Node.js (backend). Designed to simplify note-taking with a smooth UI and full CRUD functionality.",
     features: [
