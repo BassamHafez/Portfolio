@@ -26,6 +26,9 @@ body {
   background-repeat: no-repeat;
 }
 
+input,textarea{
+  outline: none;
+}
 
 @media screen and (max-width:768px) {
   body,html{

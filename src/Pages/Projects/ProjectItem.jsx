@@ -5,16 +5,23 @@ import {
   faVideoCamera,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
 
 const ProjectItem = ({ project }) => {
   const iconClasses =
     "mx-2 hover:scale-110 hover:text-cyan-400 duration-300 cursor-pointer";
 
+  useEffect(() => {
+    AOS.init({ disable: "mobile" });
+  }, []);
+
   return (
     <div
       key={project._id}
       className="flex flex-col-reverse xl:flex-row justify-around items-center my-10 p-4 md:p-6 gap-4 bg-base-300 rounded-4xl shadow-lg dark:shadow-cyan-400"
+      data-aos="zoom-in" data-aos-duration="800"
     >
       <div className="basis-1/2">
         <h2 className="text-2xl font-bold mb-4 text-cyan-400">
