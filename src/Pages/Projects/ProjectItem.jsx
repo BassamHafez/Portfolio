@@ -32,6 +32,13 @@ const ProjectItem = ({ project }) => {
             </li>
           ))}
         </ul>
+        {project.note && (
+          <div role="alert" className="alert mt-2">
+            {/* <FontAwesomeIcon className="text-red-600 fa-fade" icon={faThumbTack}/> */}
+            <span className="loading loading-ring loading-lg text-red-600"></span>
+            <span>{project.note}</span>
+          </div>
+        )}
       </div>
       <div className="flex-col justify-center items-center basis-1/2">
         <div className="text-2xl mb-1 px-2 flex justify-end text-gray-400">
