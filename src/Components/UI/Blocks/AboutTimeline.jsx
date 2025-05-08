@@ -1,8 +1,11 @@
-import { faArrowAltCircleRight, faCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowAltCircleRight,
+  faCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-const AboutTimeline = ({label}) => {
+const AboutTimeline = ({ label }) => {
   const middle = (
     <div className="timeline-middle">
       <FontAwesomeIcon icon={faCircle} className="text-gray-400" />
@@ -21,6 +24,7 @@ const AboutTimeline = ({label}) => {
       title: "Route Academy",
       subTitle: "Academind by Nadia Taha & Ahmed Bahnasy",
       desc: "completed the Frontend with React track course at Route Academy in 2020",
+      isActive: true,
     },
     {
       _id: "line_2",
@@ -39,40 +43,72 @@ const AboutTimeline = ({label}) => {
     },
   ];
 
-  return (
-    <ul className={`timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ${label==="first"?"md:right-1/4 xl:right-1/2":"md:right-1/4 xl:right-1/2"}`}>
-      {educationTimline.map((line, index) => (
-        <li key={line._id}>
-          {index === 0 ? (
-            <>
-              <hr />
-              {aciveMiddle}
-            </>
-          ) : (
-            middle
-          )}
+  const experianceTimline = [
+    {
+      _id: "ex_line_1",
+      year: "2023",
+      title: "EasyJob (Graduation Project) ",
+      subTitle:
+        "Platform that connecting job seekers, employers, and freelancers",
+      desc: "Led a team of developers and managed the full project lifecycle, Used React.js for frontend and collaborated with backend developers (Node.js + MySQL), Received an Excellent mark and high praise from faculty",
+    },
+    {
+      _id: "ex_line_2",
+      year: "2023 - Present",
+      title: "Frontend Developer — Freelance",
+      subTitle:
+        "Delivered web applications for clients through platforms like (Mostaql and Upwork)",
+      desc: "Collaborated with backend teams using Node.js and PHP with MongoDB and MySQL., Developed and launched multiple real-world projects",
+      isActive: true,
+    },
+  ];
 
-          <div className="timeline-end md:mb-10 bg-gray-100 shadow-3xl p-5 rounded-3xl sm:min-w-140">
-            <time className="bg-cyan-500 rounded-2xl rounded-tr-none pe-10 ps-2 text-white">
-              {line.year}
-            </time>
-            <div className="text-lg text-cyan-500 font-medium mt-4">
-              {line.title}
+  return (
+    <ul
+      className={`timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ${
+        label === "first"
+          ? "md:right-1/4 xl:right-1/2"
+          : "md:right-1/4 xl:right-1/2"
+      }`}
+    >
+      {(label === "first" ? educationTimline : experianceTimline).map(
+        (line, index) => (
+          <li key={line._id}>
+            {index === 0 && <hr />}
+            {line.isActive ? aciveMiddle : middle}
+
+            <div className="timeline-end md:mb-10 bg-gray-100 dark:bg-base-300 shadow-3xl p-5 rounded-3xl sm:min-w-140">
+              <time className="bg-cyan-500 rounded-2xl rounded-tr-none pe-10 ps-2 text-white">
+                {line.year}
+              </time>
+              <div className="text-lg text-cyan-500 font-medium mt-4">
+                {line.title}
+              </div>
+              <span className="text-xs text-gray-400">{line.subTitle}</span>
+              <ul className="ps-6 mt-4">
+                {line.desc.split(",").map((text, index) => (
+                  <li className="list-outside list-disc" key={index}>{text}</li>
+                ))}
+              </ul>
+
+              {line.link && (
+                <Link
+                  target="_blank"
+                  to={line.link}
+                  className="underline underline-offset-1 "
+                >
+                  <FontAwesomeIcon
+                    title="show"
+                    className="hover:scale-110 duration-300 hover:text-blue-600"
+                    icon={faArrowAltCircleRight}
+                  />
+                </Link>
+              )}
             </div>
-            {line.desc}{" "}
-            {line.link && (
-              <Link
-                target="_blank"
-                to={line.link}
-                className="underline underline-offset-1 "
-              >
-                <FontAwesomeIcon title="show" className="hover:scale-110 duration-300 hover:text-blue-600" icon={faArrowAltCircleRight}/>
-              </Link>
-            )}
-          </div>
-         {index!==2&&<hr />} 
-        </li>
-      ))}
+            {index !== 2 && <hr />}
+          </li>
+        )
+      )}
     </ul>
   );
 };

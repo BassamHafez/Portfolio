@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import profilePic from "../../assets/me.jpg";
+import profilePic from "../../assets/me.webp";
 import Timeline from "../UI/Blocks/Timeline";
 import MainBtn from "../UI/Buttons/MainBtn";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
