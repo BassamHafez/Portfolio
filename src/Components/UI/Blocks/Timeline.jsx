@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Timeline = () => {
   const middleCircle = (
     <div className="timeline-middle">
-        <FontAwesomeIcon icon={faCircle} className="text-cyan-500"/>
+      <FontAwesomeIcon icon={faCircle} className="text-cyan-500" />
     </div>
   );
 

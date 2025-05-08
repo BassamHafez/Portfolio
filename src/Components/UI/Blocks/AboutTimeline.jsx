@@ -1,9 +1,7 @@
-import {
-  faArrowAltCircleRight,
-  faCircle,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { faArrowRight, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { educationTimline, experianceTimline } from "../../../logic/sharedData";
 
 const AboutTimeline = ({ label }) => {
   const middle = (
@@ -16,52 +14,6 @@ const AboutTimeline = ({ label }) => {
       <FontAwesomeIcon icon={faCircle} className="text-cyan-500" />
     </div>
   );
-
-  const educationTimline = [
-    {
-      _id: "line_1",
-      year: "2020",
-      title: "Route Academy",
-      subTitle: "Academind by Nadia Taha & Ahmed Bahnasy",
-      desc: "completed the Frontend with React track course at Route Academy in 2020",
-      isActive: true,
-    },
-    {
-      _id: "line_2",
-      year: "2023",
-      title: "Graduation",
-      subTitle: "Academind by maximilian schwarzmüller",
-      desc: "I graduated from Al-Azhar University, Faculty of Engineering, Department of Systems and Computers, with a total grade of Very Good and an Excellent grade for my graduation project.",
-    },
-    {
-      _id: "line_3",
-      year: "2023",
-      title: "React - The Complete Guide (incl. Next.js, Redux)",
-      subTitle: "Academind by maximilian schwarzmüller",
-      desc: "completed the React - The Complete Guide (incl. Next.js, Redux) course at Udemy",
-      link: "https://www.udemy.com/certificate/UC-757abf88-222a-4e5a-ae61-e24fdb6ffc79/",
-    },
-  ];
-
-  const experianceTimline = [
-    {
-      _id: "ex_line_1",
-      year: "2023",
-      title: "EasyJob (Graduation Project) ",
-      subTitle:
-        "Platform that connecting job seekers, employers, and freelancers",
-      desc: "Led a team of developers and managed the full project lifecycle, Used React.js for frontend and collaborated with backend developers (Node.js + MySQL), Received an Excellent mark and high praise from faculty",
-    },
-    {
-      _id: "ex_line_2",
-      year: "2023 - Present",
-      title: "Frontend Developer — Freelance",
-      subTitle:
-        "Delivered web applications for clients through platforms like (Mostaql and Upwork)",
-      desc: "Collaborated with backend teams using Node.js and PHP with MongoDB and MySQL., Developed and launched multiple real-world projects",
-      isActive: true,
-    },
-  ];
 
   return (
     <ul
@@ -87,22 +39,26 @@ const AboutTimeline = ({ label }) => {
               <span className="text-xs text-gray-400">{line.subTitle}</span>
               <ul className="ps-6 mt-4">
                 {line.desc.split(",").map((text, index) => (
-                  <li className="list-outside list-disc" key={index}>{text}</li>
+                  <li className="list-outside list-disc" key={index}>
+                    {text}
+                  </li>
                 ))}
               </ul>
 
               {line.link && (
-                <Link
-                  target="_blank"
-                  to={line.link}
-                  className="underline underline-offset-1 "
-                >
-                  <FontAwesomeIcon
-                    title="show"
-                    className="hover:scale-110 duration-300 hover:text-blue-600"
-                    icon={faArrowAltCircleRight}
-                  />
-                </Link>
+                <div className="text-end mt-2">
+                  <Link
+                    target="_blank"
+                    to={line.link}
+                    className="underline underline-offset-1"
+                  >
+                    <FontAwesomeIcon
+                      title="show"
+                      className="hover:translate-x-1 hover:bg-cyan-400 duration-300 border-2 border-cyan-400 hover:border-base rounded-full p-2"
+                      icon={faArrowRight}
+                    />
+                  </Link>
+                </div>
               )}
             </div>
             {index !== 2 && <hr />}
