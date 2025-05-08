@@ -160,6 +160,7 @@ export const projects = [
     imgUrl: easyjob,
     github: "https://github.com/BassamHafez/EasyJob",
     videoUrl: "https://youtu.be/gPQ4nlcljMY",
+    docsL:"https://drive.google.com/drive/folders/1JzutkPaGC2Q52bJS_8_SXGCrreKOrA2t?usp=drive_link",
     live: "https://drive.google.com/drive/folders/1JzutkPaGC2Q52bJS_8_SXGCrreKOrA2t?usp=drive_link", //live demo here
     tools: [
       "React Js",
@@ -203,7 +204,7 @@ export const projects = [
       "External Api (Movies)",
       "Route Api (Auth)",
     ],
-    desc: "Zixes is a responsive and dynamic movie web app built with React.js. It fetches real-time data from a movie API to deliver an immersive browsing experience with detailed info, ratings, and reviews.",
+    desc: "Zixes is a responsive and dynamic movie website built with React.js. It fetches real-time data from a movie API to deliver an immersive browsing experience with detailed info, ratings, and reviews.",
     features: [
       "Responsive design for seamless experience across devices.",
       "Dynamic content powered by a real movie API.",
@@ -274,7 +275,7 @@ export const projects = [
     features: [
       "Browse anime merchandise by category.",
       "Add products to cart with custom quantities.",
-      "Update and remove items from the cart.",
+      "Remove and Update items from the cart.",
       "Cart data is shared globally using React Context API.",
       "Responsive design optimized for all devices.",
       "Clean and engaging user interface for anime fans.",
@@ -305,9 +306,9 @@ export const projects = [
     type: ["react"],
     name: "Portfolio",
     imgUrl: portfolio,
-    github: "https://bassam-portfolio-one.vercel.app/",
+    github: "https://github.com/BassamHafez/Portfolio",
     videoUrl: "#",
-    live: "https://Bassam-Hafez-Portfolio.vercel.app",
+    live: "https://bassam-portfolio-one.vercel.app/",
     tools: ["React Js", "DaisyUi", "Tailwind", "Css", "Html"],
     desc: "A personal portfolio website built with React.js to showcase my skills, experience, and projects. It includes detailed sections about me, education, work history, and a contact page — all wrapped in a modern UI with dark and light modes.",
     features: [
@@ -326,7 +327,7 @@ export const projects = [
     name: "Encrypt & Decrypt Images",
     imgUrl: security,
     github: "https://github.com/BassamHafez/Encrypt-Decrypt-Images",
-    videoUrl: "#",
+    videoUrl: "https://youtu.be/mBuFGX9P5uQ",
     live: "https://bassamhafez.github.io/Encrypt-Decrypt-Images/",
     tools: ["Js", "CryptoJS", "Bootstrap", "Css", "Html"],
     desc: "A simple yet effective web app built with HTML, CSS, JavaScript, and Crypto.js to encrypt and decrypt images using AES encryption. It supports three encryption modes: ECB, CBC, and CTR, allowing users to explore different levels of image security.",
@@ -382,7 +383,7 @@ export const projects = [
     name: "Beso Restaurant",
     imgUrl: restaurant,
     github: "https://github.com/BassamHafez/Beso-Restaurant",
-    videoUrl: "#",
+    videoUrl: "https://youtu.be/UY_W3EmiYzQ",
     live: "https://bassamhafez.github.io/Beso-Restaurant",
     tools: ["JS", "Bootstrap", "Css", "Html", "External api(meals)"],
     desc: "A responsive web page for exploring and ordering a variety of meals. Built with vanilla JavaScript, this app uses an external meals API to fetch real-time data, displaying ingredients and meal details with a clean user interface.",
