@@ -10,7 +10,7 @@ import anime from "../assets/projects/anime.webp";
 import games from "../assets/projects/games.webp";
 import security from "../assets/projects/security.webp";
 import queuingTheory from "../assets/projects/queuingTheory.webp";
-import VG from "../assets/projects/VG.webp";
+import VG from "../assets/projects/vg.webp";
 import restaurant from "../assets/projects/restaurant.webp";
 import aqua from "../assets/projects/aqua.webp";
 import ministries from "../assets/projects/ministries.webp";
