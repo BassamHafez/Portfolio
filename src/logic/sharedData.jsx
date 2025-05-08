@@ -187,7 +187,7 @@ export const projects = [
     imgUrl: zixes,
     github: "https://github.com/BassamHafez/Zixes-Movies",
     videoUrl: "#",
-    live: "https://bassamhafez.github.io/Zixes-Movies/#/home",
+    live: "https://bassamhafez.github.io/Zixes-Movies/",
     tools: [
       "React Js",
       "Context",
@@ -215,7 +215,7 @@ export const projects = [
     imgUrl: ricky,
     github: "https://github.com/BassamHafez/Ricky-pet-shop",
     videoUrl: "#",
-    live: "#", //live demo here
+    live: "https://ricky-pet-shop.vercel.app/",
     tools: [
       "React Js",
       "Redux Toolkit",
@@ -261,7 +261,7 @@ export const projects = [
     imgUrl: anime,
     github: "https://github.com/BassamHafez/Anime_Store",
     videoUrl: "#",
-    live: "#", //live demo here
+    live: "https://anime-store-wheat.vercel.app/",
     tools: ["React Js", "Context Api", "Bootstrap", "Css", "Html"],
     desc: "An anime-themed e-commerce platform built with React.js. Users can browse products by category, manage their shopping cart, and enjoy a smooth UI powered by Context API for global state management.",
     features: [
@@ -280,7 +280,7 @@ export const projects = [
     github: "https://github.com/BassamHafez/Games",
     imgUrl: games,
     videoUrl: "#",
-    live: "#", //live demo here
+    live: "https://games-beryl-one.vercel.app/",
     tools: ["React Js", "Framer motion", "React Bootstrap", "Css", "Html"],
     desc: "A visually engaging React UI tailored for gamers, featuring smooth animations powered by Framer Motion. The design focuses on interactivity and aesthetic appeal, delivering an immersive user experience for game-related content.",
 
@@ -298,7 +298,7 @@ export const projects = [
     type: ["react"],
     name: "Portfolio",
     imgUrl: portfolio,
-    github: "https://github.com/BassamHafez/Portfolio",
+    github: "https://bassam-portfolio-one.vercel.app/",
     videoUrl: "#",
     live: "https://Bassam-Hafez-Portfolio.vercel.app",
     tools: ["React Js", "DaisyUi", "Tailwind", "Css", "Html"],
