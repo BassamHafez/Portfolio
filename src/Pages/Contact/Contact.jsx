@@ -7,30 +7,10 @@ import {
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import { contactLinks } from "../../logic/sharedData";
 
 const Contact = () => {
-  const contactLinks = [
-    { _id: "linke_1", url: "https://wa.me/201124090094", icon: faWhatsapp },
-    { _id: "linke_2", url: "https://github.com/BassamHafez", icon: faGithub },
-    {
-      _id: "linke_3",
-      url: "https://www.linkedin.com/in/bassam-hafez/",
-      icon: faLinkedin,
-    },
-    {
-      _id: "linke_4",
-      url: "https://www.facebook.com/bassam.elostoora",
-      icon: faFacebook,
-    },
-  ];
-
   return (
     <section className="p-5 min-h-screen">
       <MainTitle text="Get In Touch" />

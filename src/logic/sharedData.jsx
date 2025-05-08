@@ -34,6 +34,9 @@ import {
   faSass,
   faSquareJs,
   faWordpress,
+  faFacebook,
+  faLinkedin,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
 const reduxLogo = (
@@ -146,7 +149,7 @@ export const projects = [
       "Secure payments via MyFatoorah (Mada, Apple Pay, Mastercard, etc).",
       "Loyalty wallet system to save or transfer reward points.",
     ],
-    note:"The project's UI was implemented based on a ready-made Figma design"
+    note: "The project's UI was implemented based on a ready-made Figma design",
   },
   {
     _id: "proj_3",
@@ -231,7 +234,7 @@ export const projects = [
       "Login and registration UI.",
       "Smooth navigation and clean user interface.",
     ],
-    note:"The project's UI was inspired by a ready template."
+    note: "The project's UI was inspired by a ready template.",
   },
   {
     _id: "proj_6",
@@ -288,7 +291,7 @@ export const projects = [
       "Built with React.js and styled for high visual impact.",
       "Perfect for showcasing game content, profiles, or media.",
     ],
-    note:"The project's UI was inspired by a ready template."
+    note: "The project's UI was inspired by a ready template.",
   },
   {
     _id: "proj_9",
@@ -297,7 +300,7 @@ export const projects = [
     imgUrl: portfolio,
     github: "https://github.com/BassamHafez/Portfolio",
     videoUrl: "#",
-    live: "#", //live demo here
+    live: "https://Bassam-Hafez-Portfolio.vercel.app",
     tools: ["React Js", "DaisyUi", "Tailwind", "Css", "Html"],
     desc: "A personal portfolio website built with React.js to showcase my skills, experience, and projects. It includes detailed sections about me, education, work history, and a contact page — all wrapped in a modern UI with dark and light modes.",
     features: [
@@ -364,7 +367,7 @@ export const projects = [
       "Built using JQuery and some plugins (no frameworks).",
       "Clean animations and user-friendly navigation.",
     ],
-    note:"The project's UI was inspired by a ready template."
+    note: "The project's UI was inspired by a ready template.",
   },
   {
     _id: "proj_12",
@@ -401,7 +404,7 @@ export const projects = [
       "Focus on security and user convenience to safeguard against ransomware.",
       "Frontend development only, with backend functionality planned for integration.",
     ],
-    note:"The project's UI was implemented based on a ready-made Figma design"
+    note: "The project's UI was implemented based on a ready-made Figma design",
   },
   {
     _id: "proj_14",
@@ -513,7 +516,7 @@ export const projects = [
       "Focus on visual design, layout structuring, and clean code.",
       "No JavaScript or backend – purely frontend styling and structure.",
     ],
-    note:"This project is a frontend implementation of a well-known real-world company website."
+    note: "This project is a frontend implementation of a well-known real-world company website.",
   },
   {
     _id: "proj_20",
@@ -532,7 +535,7 @@ export const projects = [
       "Beautiful and modern UI that mimics a real-world food ordering site.",
       "Perfect for demonstrating frontend styling and design precision.",
     ],
-    note:"This project is a frontend implementation of a well-known real-world company website."
+    note: "This project is a frontend implementation of a well-known real-world company website.",
   },
   {
     _id: "proj_21",
@@ -542,7 +545,7 @@ export const projects = [
     github: "https://github.com/BassamHafez/Car-Shop",
     videoUrl: "#",
     live: "https://bassamhafez.github.io/Car-Shop/",
-    tools: ["JS","Bootstrap", "Css", "Html"],
+    tools: ["JS", "Bootstrap", "Css", "Html"],
     desc: "A stylish and interactive landing page for a car shop, featuring a JavaScript-powered slider to showcase cars dynamically. Built using HTML, CSS, and vanilla JS, the design emphasizes modern aesthetics and responsive layout.",
     features: [
       "Responsive landing page for showcasing car models.",
@@ -636,5 +639,20 @@ export const mySkills = [
     name: "Java",
     icon: faJava,
     color: "text-red-700",
+  },
+];
+
+export const contactLinks = [
+  { _id: "linke_1", url: "https://wa.me/201124090094", icon: faWhatsapp },
+  { _id: "linke_2", url: "https://github.com/BassamHafez", icon: faGithub },
+  {
+    _id: "linke_3",
+    url: "https://www.linkedin.com/in/bassam-hafez/",
+    icon: faLinkedin,
+  },
+  {
+    _id: "linke_4",
+    url: "https://www.facebook.com/bassam.elostoora",
+    icon: faFacebook,
   },
 ];
