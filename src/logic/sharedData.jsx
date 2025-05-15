@@ -94,7 +94,7 @@ export const projects = [
     name: "Diwan Amlak",
     imgUrl: diiwan,
     // videoUrl: "#",
-    github: "https://github.com/BassamHafez/Diwan-Amlak",
+    github: "https://github.com/BassamHafez/Diiwan-Amlak",
     live: "https://diiwan.com",
     tools: [
       "React Js",
