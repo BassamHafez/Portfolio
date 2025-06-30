@@ -50,7 +50,11 @@ const ProjectItem = ({ project }) => {
       </div>
       <div className="flex-col justify-center items-center basis-1/2">
         <div className="text-2xl mb-1 px-2 flex justify-end text-gray-400">
-          <div className="tooltip">
+          <div
+            className={`tooltip ${
+              project.github ? "" : "pointer-events-none opacity-20"
+            }`}
+          >
             <div className="tooltip-content">
               <div className="animate-bounce text-cyan-400 -rotate-10 text-md font-black">
                 Github
@@ -64,55 +68,62 @@ const ProjectItem = ({ project }) => {
               />
             </Link>
           </div>
-          {project.live && (
-            <div className="tooltip">
-              <div className="tooltip-content">
-                <div className="animate-bounce text-cyan-400 -rotate-10 text-md font-black">
-                  Live Demo
-                </div>
+          <div
+            className={`tooltip ${
+              project.live ? "" : "pointer-events-none opacity-20"
+            }`}
+          >
+            <div className="tooltip-content">
+              <div className="animate-bounce text-cyan-400 -rotate-10 text-md font-black">
+                Live Demo
               </div>
-              <Link to={project.live} target="_blank">
-                <FontAwesomeIcon
-                  title="Live"
-                  className={iconClasses}
-                  icon={faEye}
-                />
-              </Link>
             </div>
-          )}
+            <Link to={project.live} target="_blank">
+              <FontAwesomeIcon
+                title="Live"
+                className={iconClasses}
+                icon={faEye}
+              />
+            </Link>
+          </div>
 
-          {project.videoUrl && (
-            <div className="tooltip">
-              <div className="tooltip-content">
-                <div className="animate-bounce text-cyan-400 -rotate-10 text-md font-black">
-                  Video
-                </div>
+          <div
+            className={`tooltip ${
+              project.videoUrl ? "" : "pointer-events-none opacity-20"
+            }`}
+          >
+            <div className="tooltip-content">
+              <div className="animate-bounce text-cyan-400 -rotate-10 text-md font-black">
+                Video
               </div>
-              <Link to={project.videoUrl} target="_blank">
-                <FontAwesomeIcon
-                  title="Video"
-                  className={iconClasses}
-                  icon={faVideoCamera}
-                />
-              </Link>
             </div>
-          )}
-          {project.docs && (
-            <div className="tooltip">
-              <div className="tooltip-content">
-                <div className="animate-bounce text-cyan-400 -rotate-10 text-md font-black">
-                  Docs
-                </div>
+            <Link to={project.videoUrl} target="_blank">
+              <FontAwesomeIcon
+                title="Video"
+                className={iconClasses}
+                icon={faVideoCamera}
+              />
+            </Link>
+          </div>
+
+          <div
+            className={`tooltip ${
+              project.docs ? "" : "pointer-events-none opacity-20"
+            }`}
+          >
+            <div className="tooltip-content">
+              <div className="animate-bounce text-cyan-400 -rotate-10 text-md font-black">
+                Docs
               </div>
-              <Link to={project.docs} target="_blank">
-                <FontAwesomeIcon
-                  title="Docs"
-                  className={iconClasses}
-                  icon={faBook}
-                />
-              </Link>
             </div>
-          )}
+            <Link to={project.docs} target="_blank">
+              <FontAwesomeIcon
+                title="Docs"
+                className={iconClasses}
+                icon={faBook}
+              />
+            </Link>
+          </div>
         </div>
         <div className="group border-1 border-transparent hover:border-cyan-200 overflow-hidden w-full max-w-4xl rounded-2xl relative m-auto">
           <div className="bg-black/90 opacity-0 group-hover:opacity-100 flex justify-center items-center absolute top-0 left-0 right-0 bottom-0 rounded-2xl z-10 duration-500">
