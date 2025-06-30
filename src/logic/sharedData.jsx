@@ -94,7 +94,7 @@ export const projects = [
     name: "Diwan Amlak",
     imgUrl: diiwan,
     // videoUrl: "#",
-    github: "https://github.com/BassamHafez/Diiwan-Amlak",
+    // github: "https://github.com/BassamHafez/Diiwan-Amlak",
     live: "https://diiwan.com",
     tools: [
       "React Js",
@@ -125,7 +125,7 @@ export const projects = [
     type: ["freelance", "fullstack", "featured"],
     name: "Give A Gift",
     imgUrl: giveagift,
-    github: "https://github.com/BassamHafez/Give-A-Gift",
+    // github: "https://github.com/BassamHafez/Give-A-Gift",
     videoUrl: "https://youtu.be/NY_l888_TiU",
     live: "https://www.giveagift.com.sa/",
     tools: [
