@@ -22,6 +22,7 @@ import saudi from "../assets/projects/saudi.webp";
 import contacts from "../assets/projects/contacts.webp";
 import we from "../assets/projects/we.webp";
 import portfolio from "../assets/projects/portfolio.webp";
+import nextjs from "../assets/nextjs.webp";
 export {
   diiwan,
   giveagift,
@@ -45,4 +46,5 @@ export {
   we,
   saudi,
   portfolio,
+  nextjs
 };

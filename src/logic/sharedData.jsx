@@ -21,6 +21,7 @@ import {
   we,
   saudi,
   portfolio,
+  nextjs,
 } from "../shared/images";
 
 import {
@@ -566,6 +567,12 @@ export const projects = [
 ];
 
 export const mySkills = [
+  {
+    _id: "new_skill_1",
+    name: "Next JS",
+    src: nextjs,
+    isImg: true,
+  },
   { _id: "skill_1", name: "React", icon: faReact, color: "text-cyan-500" },
   {
     _id: "skill_2",

@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 
 const About = () => {
-
   useEffect(() => {
     AOS.init({ disable: "mobile" });
   }, []);
@@ -29,11 +28,22 @@ const About = () => {
         <MainTitle text="My Skills" />
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 justify-items-center">
           {mySkills.map((skill) => (
-            <div key={skill._id} className="w-full xs:w-auto" data-aos="zoom-in-up" data-aos-duration="800">
+            <div
+              key={skill._id}
+              className="w-full xs:w-auto"
+              data-aos="zoom-in-up"
+              data-aos-duration="800"
+            >
               <div
                 className={`group hover:-translate-y-2 shadow-md dark:shadow-cyan-100 duration-300 bg-base-300 cursor-pointer h-40 w-full xs:w-55 rounded-4xl flex flex-col items-center justify-evenly text-6xl ${skill.color}`}
               >
-                {skill.isSvg ? (
+                {skill.isImg ? (
+                  <img
+                    className="w-16 object-contain group-hover:scale-120 duration-300"
+                    src={skill.src}
+                    alt={skill.name}
+                  />
+                ) : skill.isSvg ? (
                   <div className="group-hover:scale-120 duration-300">
                     {skill.icon}
                   </div>
