@@ -675,7 +675,7 @@ export const contactLinks = [
 export const educationTimline = [
   {
     _id: "line_1",
-    year: "2020",
+    year: "2020 (Dec)",
     title: "Route Academy",
     subTitle: "Academind by Nadia Taha & Ahmed Bahnasy",
     desc: "completed the Frontend with React track course at Route Academy in 2020",
@@ -683,25 +683,33 @@ export const educationTimline = [
   },
   {
     _id: "line_2",
-    year: "2023",
-    title: "Graduation",
+    year: "2023 (August)",
+    title: "React - The Complete Guide (incl. Next.js, Redux)",
     subTitle: "Academind by maximilian schwarzmüller",
-    desc: "I graduated from Al-Azhar University, Faculty of Engineering, Department of Systems and Computers, with a total grade of Very Good and an Excellent grade for my graduation project.",
+    desc: "completed the React - The Complete Guide (incl. Next.js Redux) course at Udemy",
+    link: "https://www.udemy.com/certificate/UC-757abf88-222a-4e5a-ae61-e24fdb6ffc79/",
   },
   {
     _id: "line_3",
-    year: "2023",
-    title: "React - The Complete Guide (incl. Next.js, Redux)",
+    year: "2024 (July)",
+    title: "Graduation",
+    subTitle: "Very Good Honors | Excellent Grad Project",
+    desc: "I graduated from Al-Azhar University, Faculty of Engineering, Department of Systems and Computers, with a total grade of Very Good and an Excellent grade for my graduation project.",
+  },
+  {
+    _id: "line_4",
+    year: "2025 (July)",
+    title: "Next.js 15 & React - The Complete Guide",
     subTitle: "Academind by maximilian schwarzmüller",
-    desc: "completed the React - The Complete Guide (incl. Next.js, Redux) course at Udemy",
-    link: "https://www.udemy.com/certificate/UC-757abf88-222a-4e5a-ae61-e24fdb6ffc79/",
+    desc: "completed Next.js 15 - The complete guide course at Udemy",
+    link: "https://www.udemy.com/certificate/UC-ad345531-9622-411f-a0d8-cff6bb42633f/",
   },
 ];
 
 export const experianceTimline = [
   {
     _id: "ex_line_1",
-    year: "2023",
+    year: "2024 (Feb) - 2024 (June)",
     title: "EasyJob (Graduation Project) ",
     subTitle:
       "Platform that connecting job seekers, employers, and freelancers",
@@ -709,11 +717,21 @@ export const experianceTimline = [
   },
   {
     _id: "ex_line_2",
-    year: "2023 - Present",
+    year: "2024 (July) - Present",
     title: "Frontend Developer — Freelance",
     subTitle:
       "Delivered web applications for clients through platforms like (Mostaql and Upwork)",
     desc: "Collaborated with backend teams using Node.js and PHP with MongoDB and MySQL., Developed and launched multiple real-world projects",
     isActive: true,
+  },
+  {
+    _id: "ex_line_3",
+    year: "2025 (May) - Present",
+    title: "Junior Frontend Developer at Mirrorful",
+    subTitle:
+      "Building responsive web applications and data dashboards for enterprise clients",
+    desc: "Develop modern UI/UX solutions using React/Next.js, collaborate with cross-functional teams to deliver client projects, and implement responsive designs for optimal user experience across devices",
+    isActive: true,
+    link: "https://themirrorful.com/",
   },
 ];

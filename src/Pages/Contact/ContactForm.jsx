@@ -34,7 +34,6 @@ const ContactForm = () => {
       )
       .then(
         () => {
-          console.log("success");
           showToast({
             show: true,
             type: "success",
@@ -69,24 +68,13 @@ const ContactForm = () => {
           />
           <span>Email Address</span>
         </label>
-        <label className="floating-label mb-10">
-          <input
-            className="input input-md w-full"
-            type="text"
-            name="subject"
-            placeholder="Subject"
-            required
-          />
-          <span>Subject</span>
-        </label>
-
         <textarea
           className="textarea mb-10 w-full"
           name="message"
           placeholder="Your Message"
           required
           rows={7}
-        ></textarea>
+        />
         <MainBtn classes="w-fit ms-auto" text="Send Message" type="submit" />
       </form>
       {toast.show && <Toaster toast={toast} />}

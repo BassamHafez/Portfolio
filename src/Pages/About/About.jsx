@@ -13,17 +13,19 @@ const About = () => {
   return (
     <main className="min-h-screen p-10">
       <section>
-        <div className="flex flex-wrap xl:flex-nowrap">
-          <div data-aos="zoom-in-right" data-aos-duration="800">
+        <div className="flex flex-wrap xl:flex-nowrap gap-12">
+          <div data-aos="zoom-in-right" data-aos-duration="800" className="z-20">
             <MainTitle text="Education" classes="mb-2 mx-2" />
             <AboutTimeline label="first" />
           </div>
-          <div data-aos="zoom-in-left" data-aos-duration="800">
+
+          <div data-aos="zoom-in-left" data-aos-duration="800" className="z-10">
             <MainTitle text="Experience" classes="mb-2 mx-2" />
             <AboutTimeline />
           </div>
         </div>
       </section>
+
       <section>
         <MainTitle text="My Skills" />
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 justify-items-center">
