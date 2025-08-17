@@ -14,7 +14,11 @@ const About = () => {
     <main className="min-h-screen p-10">
       <section>
         <div className="flex flex-wrap xl:flex-nowrap gap-12">
-          <div data-aos="zoom-in-right" data-aos-duration="800" className="z-20">
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="800"
+            className="z-20"
+          >
             <MainTitle text="Education" classes="mb-2 mx-2" />
             <AboutTimeline label="first" />
           </div>
